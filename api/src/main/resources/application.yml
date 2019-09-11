@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api
+    username: api-user
+    password: secretpwd
+  jpa:
+    show-sql: true
+    hibernate:
+      temp:
+        use_jdbc_metadata_defaults: false
+    generate-ddl: true
+  data:
+    rest:
+      base-path: /api
